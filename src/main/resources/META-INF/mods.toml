@@ -6,7 +6,7 @@ license="MIT"
 modId="telepastries"
 version="${file.jarVersion}"
 displayName="TelePastries Extended"
-displayURL="https://github.com/Mrbysco/TelePastries"
+displayURL="https://github.com/TheDogOfChaos/TelePastries"
 authors="Mrbysco, ShyNieke, TheDogOfChaos"
 description='''Pastries that teleport players.'''
 
