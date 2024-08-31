@@ -9,6 +9,7 @@ import com.mrbysco.telepastries.blocks.cake.compat.BlockCustomCake2;
 import com.mrbysco.telepastries.blocks.cake.compat.BlockCustomCake3;
 import com.mrbysco.telepastries.blocks.cake.compat.BlockLostCityCake;
 import com.mrbysco.telepastries.blocks.cake.compat.BlockTwilightCake;
+import com.mrbysco.telepastries.blocks.cake.compat.BlockAetherCake;
 import com.mrbysco.telepastries.item.CakeBlockItem;
 import com.mrbysco.telepastries.item.CustomCake2BlockItem;
 import com.mrbysco.telepastries.item.CustomCake3BlockItem;
@@ -40,6 +41,7 @@ public class TeleRegistry {
 
 	public static final RegistryObject<Block> TWILIGHT_CAKE = BLOCKS.register("twilight_cake", () -> new BlockTwilightCake(BlockBehaviour.Properties.copy(Blocks.CAKE).strength(0.5F).sound(SoundType.WOOL)));
 	public static final RegistryObject<Block> LOST_CITY_CAKE = BLOCKS.register("lost_city_cake", () -> new BlockLostCityCake(BlockBehaviour.Properties.copy(Blocks.CAKE).strength(0.5F).sound(SoundType.WOOL)));
+	public static final RegistryObject<Block> AETHER_CAKE = BLOCKS.register("aether_cake", () -> new BlockAetherCake(BlockBehaviour.Properties.copy(Blocks.CAKE).strength(0.5F).sound(SoundType.WOOL)));
 	public static final RegistryObject<Block> CUSTOM_CAKE = BLOCKS.register("custom_cake", () -> new BlockCustomCake(BlockBehaviour.Properties.copy(Blocks.CAKE).strength(0.5F).sound(SoundType.WOOL)));
 	public static final RegistryObject<Block> CUSTOM_CAKE2 = BLOCKS.register("custom_cake2", () -> new BlockCustomCake2(BlockBehaviour.Properties.copy(Blocks.CAKE).strength(0.5F).sound(SoundType.WOOL)));
 	public static final RegistryObject<Block> CUSTOM_CAKE3 = BLOCKS.register("custom_cake3", () -> new BlockCustomCake3(BlockBehaviour.Properties.copy(Blocks.CAKE).strength(0.5F).sound(SoundType.WOOL)));
@@ -51,6 +53,7 @@ public class TeleRegistry {
 
 	public static final RegistryObject<Item> TWILIGHT_CAKE_ITEM = ITEMS.register("twilight_cake", () -> new CakeBlockItem(TWILIGHT_CAKE.get(), new Item.Properties()));
 	public static final RegistryObject<Item> LOST_CITY_CAKE_ITEM = ITEMS.register("lost_city_cake", () -> new CakeBlockItem(LOST_CITY_CAKE.get(), new Item.Properties()));
+	public static final RegistryObject<Item> AETHER_CAKE_ITEM = ITEMS.register("aether_cake", () -> new CakeBlockItem(AETHER_CAKE.get(), new Item.Properties()));
 	public static final RegistryObject<Item> CUSTOM_CAKE_ITEM = ITEMS.register("custom_cake", () -> new CustomCakeBlockItem(CUSTOM_CAKE.get(), new Item.Properties()));
 	public static final RegistryObject<Item> CUSTOM_CAKE2_ITEM = ITEMS.register("custom_cake2", () -> new CustomCake2BlockItem(CUSTOM_CAKE2.get(), new Item.Properties()));
 	public static final RegistryObject<Item> CUSTOM_CAKE3_ITEM = ITEMS.register("custom_cake3", () -> new CustomCake3BlockItem(CUSTOM_CAKE3.get(), new Item.Properties()));

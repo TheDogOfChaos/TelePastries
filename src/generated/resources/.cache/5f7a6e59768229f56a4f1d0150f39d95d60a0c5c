@@ -1,4 +1,5 @@
-// 1.20.1	2023-06-24T19:47:49.4949752	Block States: telepastries
+// 1.20.1	2024-08-31T15:13:38.5896025	Block States: telepastries
+27819110b171b54017700b99623dabfeb68ef740 assets/telepastries/blockstates/aether_cake.json
 e4ae4e78c657e28e3bf3f0af5ffa9395d0bd6582 assets/telepastries/blockstates/custom_cake.json
 24c6c3c07ac7f6c8875f3b29a3a4642a2241f0c2 assets/telepastries/blockstates/custom_cake2.json
 f4fa9a8dd20cb9901e76454597006d79cf526f0a assets/telepastries/blockstates/custom_cake3.json
@@ -7,6 +8,13 @@ ae585bbd8bae48286df891448ab4fc69bd54bd2f assets/telepastries/blockstates/lost_ci
 2bc2920b64a44517c764865f23a3127e00407b3d assets/telepastries/blockstates/nether_cake.json
 8cfa52d9be4fe64faed4a770eaf3768b8757c5fe assets/telepastries/blockstates/overworld_cake.json
 3701bed6709d9f383533ed4751a0047525988473 assets/telepastries/blockstates/twilight_cake.json
+c77ffac31406356c72b344540c736da9b6f5eb4b assets/telepastries/models/block/aether_cake.json
+bbff773f1682b7fb9a31f919586cce8ae04d6d18 assets/telepastries/models/block/aether_cake_slice1.json
+4fb70fcf1b84f07a8cd99645a3bd8e8fe534e9d9 assets/telepastries/models/block/aether_cake_slice2.json
+410eeb331aafe0b3c16ca1da7dde271030e1deea assets/telepastries/models/block/aether_cake_slice3.json
+099047b82f99fc8878d51698b82250ce7e1f3652 assets/telepastries/models/block/aether_cake_slice4.json
+b8609da1957d41daea4076cb9e9bb8cc020c8e2e assets/telepastries/models/block/aether_cake_slice5.json
+9aa5619b8baea7db036a5f69fba8c6e2ffc7c987 assets/telepastries/models/block/aether_cake_slice6.json
 f18b4eb2c8ef5c1b95c3ee15ce3e53e84cd91fb4 assets/telepastries/models/block/custom_cake.json
 f18b4eb2c8ef5c1b95c3ee15ce3e53e84cd91fb4 assets/telepastries/models/block/custom_cake2.json
 7cf1f47274dbd470f868fd298ee023d1e14e9aca assets/telepastries/models/block/custom_cake2_slice1.json

@@ -24,6 +24,7 @@ public class PastryBlockStateProvider extends BlockStateProvider {
 		makeCake(TeleRegistry.END_CAKE, "end");
 		makeCake(TeleRegistry.TWILIGHT_CAKE, "twilight");
 		makeCake(TeleRegistry.LOST_CITY_CAKE, "cities");
+		makeCake(TeleRegistry.AETHER_CAKE, "aether");
 		makeCake(TeleRegistry.CUSTOM_CAKE, "custom");
 		makeCake(TeleRegistry.CUSTOM_CAKE2, "custom");
 		makeCake(TeleRegistry.CUSTOM_CAKE3, "custom");

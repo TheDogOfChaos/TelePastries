@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/cake",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "telepastries:block/aether/cake_bottom",
+    "particle": "telepastries:block/aether/cake_side",
+    "side": "telepastries:block/aether/cake_side",
+    "top": "telepastries:block/aether/cake_top"
+  }
+}

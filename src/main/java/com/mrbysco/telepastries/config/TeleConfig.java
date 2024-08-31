@@ -37,6 +37,9 @@ public class TeleConfig {
 		public final BooleanValue consumeLostCitiesCake;
 		public final ConfigValue<List<? extends String>> lostCitiesCakeRefillItem;
 
+		public final BooleanValue consumeAetherCake;
+		public final ConfigValue<List<? extends String>> aetherCakeRefillItems;
+
 		public final BooleanValue consumeCustomCake;
 		public final ConfigValue<? extends String> customCakeName;
 		public final ConfigValue<? extends String> customCakeDimension;
@@ -172,6 +175,19 @@ public class TeleConfig {
 			lostCitiesCakeRefillItem = builder
 					.comment("Set the refill items used by the Lost Cities Cake (Only change if you know what you're doing) [modid:itemname]")
 					.defineList("lostCitiesCakeRefillItem", () -> Arrays.asList(lostcityItems), o -> (o instanceof String));
+
+			consumeAetherCake = builder
+					.comment("Defines if the Aether Cake gets partly consumed when eaten [default: true]")
+					.define("consumeAetherCake", true);
+
+			String[] aetherItems = new String[]
+					{
+							"aether:ambrosium_shard"
+					};
+
+			aetherCakeRefillItems = builder
+					.comment("Set the refill items used by the Aether Cake (Only change if you know what you're doing) [modid:itemname]")
+					.defineList("aetherCakeRefillItem", () -> Arrays.asList(aetherItems), o -> (o instanceof String));
 
 			builder.pop();
 			builder.comment("Custom Cake settings");

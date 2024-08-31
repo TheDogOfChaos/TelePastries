@@ -126,6 +126,8 @@ dependencies {
     implementation fg.deobf("curse.maven:TheOneProbe-245211:4579432") //The One Probe (TOP)
 
     runtimeOnly fg.deobf("teamtwilight:twilightforest:${twilight_forest_version}:universal")
+    runtimeOnly fg.deobf("curse.maven:aether-255308:5302178")
+    runtimeOnly fg.deobf("curse.maven:the-lost-cities-269024:5627006")
 }
 
 // Example for how to get properties into the manifest for reading at runtime.
