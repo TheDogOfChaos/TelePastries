@@ -5,9 +5,9 @@ license="MIT"
 [[mods]]
 modId="telepastries"
 version="${file.jarVersion}"
-displayName="TelePastries"
+displayName="TelePastries Extended"
 displayURL="https://github.com/Mrbysco/TelePastries"
-authors="Mrbysco, ShyNieke"
+authors="Mrbysco, ShyNieke, TheDogOfChaos"
 description='''Pastries that teleport players.'''
 
 [[dependencies.telepastries]]
@@ -15,4 +15,25 @@ modId="minecraft"
 mandatory=true
 versionRange="[1.20,1.21)"
 ordering="NONE"
+side="BOTH"
+
+[[dependencies.telepastries]]
+modId="aether"
+mandatory=false
+versionRange="[1.20.1-1.0.0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.telepastries]]
+modId="twilightforest"
+mandatory=false
+versionRange="[1.20.1-4.3.1735,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.telepastries]]
+modId="lostcities"
+mandatory=false
+versionRange="[1.20-7.0.0,)"
+ordering="AFTER"
 side="BOTH"
