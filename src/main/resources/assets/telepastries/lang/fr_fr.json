@@ -1,9 +1,9 @@
 {
     "_comment": "Config",
-    "telepastries.config.title": "Configuration de TelePastries",
+    "telepastries.config.title": "Configuration : TelePâtisseries Étendu",
 
     "_comment": "Creative Tab",
-    "itemGroup.tele_tab": "TelePastries",
+    "itemGroup.tele_tab": "TelePâtisseries Étendu",
 
     "_comment": "Block",
     "block.telepastries.nether_cake": "Gâteau du Nether",
@@ -12,6 +12,7 @@
 
     "block.telepastries.twilight_cake": "Gâteau de la Twilight Forest",
     "block.telepastries.lost_city_cake": "Gâteau des Cités perdues",
+    "block.telepastries.aether_cake": "Gâteau de Aether",
     "block.telepastries.hunting_dimension_cake": "Gâteau de la dimension de chasse",
     "block.telepastries.custom_cake": "Gâteau de %s",
     "block.telepastries.custom_cake2": "%s Cake",
@@ -20,11 +21,12 @@
     "_comment": "Message",
     "telepastries.pastry.reset.complete": "La position sauvegardée de la dimension %s a été réinitialisée.",
     "telepastries.pastry.reset.failed": "La dimension %s n'a pas de position sauvegardée.",
-    "telepastries.pastry.support.disabled": "Cake is disabled because %s isn't installed",
-    "telepastries.pastry.custom.unbound": "Custom Cake has no dimension bound in config ",
-    "telepastries.pastry.custom.invalid": "Destination of cake invalid %s",
-    "telepastries.same_dimension": "Can't teleport to the same dimension",
-    "telepastries.teleport_restricted": "Can't teleport to a non-overworld dimension",
+    "telepastries.pastry.support.disabled": "Le gâteau est désactivé car %s n'est pas installé",
+    "telepastries.pastry.custom.unbound": "Le gâteau personnalisé n'a aucune dimension associée dans la configuration",
+    "telepastries.pastry.custom.invalid": "Destination du gâteau invalide %s",
+    "telepastries.same_dimension": "Impossible de se téléporter dans la même dimension",
+    "telepastries.teleport_restricted": "Impossible de se téléporter dans une dimension autre que l'Overworld"
+
 
     "_comment": "Waila",
     "config.jade.plugin_telepastries.bites": "Parts de gâteau"
