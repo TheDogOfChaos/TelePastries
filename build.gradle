@@ -100,6 +100,12 @@ repositories {
     maven { // Just Enough Items (JEI)
         url = "https://maven.blamejared.com"
     }
+    maven { // The Twilight Forest
+        url = "https://modmaven.dev/"
+        content {
+            includeGroup "teamtwilight"
+        }
+    }
     maven { // CurseMaven
         url = 'https://www.cursemaven.com'
         content {
@@ -119,9 +125,9 @@ dependencies {
     implementation fg.deobf("curse.maven:jade-324717:4573193") //Jade (WAILA)
     implementation fg.deobf("curse.maven:TheOneProbe-245211:4579432") //The One Probe (TOP)
 
-    runTimeOnly fg.deobf("curse.maven:the-twilight-forest-227639:5468648")
-    runTimeOnly fg.deobf("curse.maven:aether-255308:5302178")
-    runTimeOnly fg.deobf("curse.maven:the-lost-cities-269024:5627006")
+    runtimeOnly fg.deobf("teamtwilight:twilightforest:${twilight_forest_version}:universal")
+    runtimeOnly fg.deobf("curse.maven:aether-255308:5302178")
+    runtimeOnly fg.deobf("curse.maven:the-lost-cities-269024:5627006")
 
 }
 
