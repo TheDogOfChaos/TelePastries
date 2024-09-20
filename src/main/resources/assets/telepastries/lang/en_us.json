@@ -3,7 +3,7 @@
     "telepastries.config.title": "Configuration: TelePastries Extended",
 
     "_comment": "Creative Tab",
-    "itemGroup.tele_tab": "Configuration: TelePastries Extended",
+    "itemGroup.tele_tab": "TelePastries Extended",
 
     "_comment": "Block",
     "block.telepastries.nether_cake": "Nether Cake",
@@ -27,6 +27,7 @@
     "telepastries.same_dimension": "Can't teleport to the same dimension",
     "telepastries.teleport_restricted": "Can't teleport to a non-overworld dimension",
 
-    "_comment": "Waila",
-    "config.jade.plugin_telepastries.bites": "Cake bites"
+    "_comment": "Jade/TOP",
+    "telepastries.compat.bites_remaining": "Bites remaining:",
+    "config.jade.plugin_telepastries.bites": "Cake Bites"
 }

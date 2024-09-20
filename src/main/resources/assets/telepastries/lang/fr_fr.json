@@ -28,6 +28,6 @@
     "telepastries.teleport_restricted": "Impossible de se téléporter dans une dimension autre que l'Overworld"
 
 
-    "_comment": "Waila",
-    "config.jade.plugin_telepastries.bites": "Parts de gâteau"
+    "_comment": "Jade/TOP",
+    "telepastries.compat.bites_remaining": "Bites remaining:"
 }

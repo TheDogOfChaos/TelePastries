@@ -5,6 +5,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
     id 'com.matthewprenger.cursegradle' version '1.4.0'
     id 'com.modrinth.minotaur' version "2.+"
+    id 'io.github.0ffz.github-packages' version '[1,2)'
 }
 
 version = "${version}"
@@ -97,21 +98,23 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
-    maven {
+    maven { // Just Enough Items (JEI)
         url = "https://maven.blamejared.com"
     }
-    maven {
+    maven { // The Twilight Forest
         url = "https://modmaven.dev/"
         content {
             includeGroup "teamtwilight"
         }
     }
-    maven {
+    maven { // CurseMaven
         url = 'https://www.cursemaven.com'
         content {
             includeGroup "curse.maven"
         }
     }
+    maven githubPackage.invoke("The-Aether-Team/Nitrogen")
+    maven githubPackage.invoke("The-Aether-Team/The-Aether")
 }
 
 dependencies {
@@ -125,9 +128,15 @@ dependencies {
     implementation fg.deobf("curse.maven:jade-324717:4573193") //Jade (WAILA)
     implementation fg.deobf("curse.maven:TheOneProbe-245211:4579432") //The One Probe (TOP)
 
-    runtimeOnly fg.deobf("teamtwilight:twilightforest:${twilight_forest_version}:universal")
-    runtimeOnly fg.deobf("curse.maven:aether-255308:5302178")
-    runtimeOnly fg.deobf("curse.maven:the-lost-cities-269024:5627006")
+    implementation fg.deobf("teamtwilight:twilightforest:${twilight_forest_version}:universal")
+    implementation fg.deobf("com.aetherteam.nitrogen:nitrogen_internals:${project.nitrogen_version}")
+    implementation fg.deobf("com.aetherteam.aether:aether:${project.aether_version}")
+    implementation fg.deobf("curse.maven:the-lost-cities-269024:5627006")
+
+    jarJar fg.deobf("com.aetherteam.nitrogen:nitrogen_internals:${project.nitrogen_version}") {
+        jarJar.ranged(it, "[${project.nitrogen_version},)")
+        jarJar.pin(it, "${project.nitrogen_version}")
+    }
 }
 
 // Example for how to get properties into the manifest for reading at runtime.
