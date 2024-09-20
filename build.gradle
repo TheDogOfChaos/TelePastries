@@ -128,15 +128,10 @@ dependencies {
     implementation fg.deobf("curse.maven:jade-324717:4573193") //Jade (WAILA)
     implementation fg.deobf("curse.maven:TheOneProbe-245211:4579432") //The One Probe (TOP)
 
-    implementation fg.deobf("teamtwilight:twilightforest:${twilight_forest_version}:universal")
-    implementation fg.deobf("com.aetherteam.nitrogen:nitrogen_internals:${project.nitrogen_version}")
-    implementation fg.deobf("com.aetherteam.aether:aether:${project.aether_version}")
-    implementation fg.deobf("curse.maven:the-lost-cities-269024:5627006")
+    runTimeOnly fg.deobf("teamtwilight:twilightforest:${twilight_forest_version}:universal")
+    runTimeOnly fg.deobf("com.aetherteam.aether:aether:${project.aether_version}")
+    runTimeOnly fg.deobf("curse.maven:the-lost-cities-269024:5627006")
 
-    jarJar fg.deobf("com.aetherteam.nitrogen:nitrogen_internals:${project.nitrogen_version}") {
-        jarJar.ranged(it, "[${project.nitrogen_version},)")
-        jarJar.pin(it, "${project.nitrogen_version}")
-    }
 }
 
 // Example for how to get properties into the manifest for reading at runtime.

@@ -156,7 +156,7 @@ public class BlockCakeBase extends BlockPastryBase {
 				if (!ForgeHooks.onTravelToDimension(player, getCakeWorld()))
 					return InteractionResult.FAIL;
 			}
-			
+
 			teleportToDimension(levelAccessor, pos, player);
 
 			return InteractionResult.SUCCESS;
