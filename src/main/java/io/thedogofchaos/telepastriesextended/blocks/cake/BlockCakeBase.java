@@ -152,12 +152,12 @@ public class BlockCakeBase extends BlockPastryBase {
 				}
 			}
 
-			if (!ForgeHooks.onTravelToDimension(player, getCakeWorld()))
-				return InteractionResult.FAIL;
-
-			//TelePastries.logger.debug("At eatCake before teleportToDimension");
+			if (!levelAccessor.isClientSide()) {
+				if (!ForgeHooks.onTravelToDimension(player, getCakeWorld()))
+					return InteractionResult.FAIL;
+			}
+			
 			teleportToDimension(levelAccessor, pos, player);
-			//TelePastries.logger.debug("At eatCake after teleportToDimension");
 
 			return InteractionResult.SUCCESS;
 		}
