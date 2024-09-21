@@ -1,4 +1,4 @@
-name: Build and Maven
+name: Build and publish to Modrinth.
 
 on: [push, workflow_dispatch]
 
