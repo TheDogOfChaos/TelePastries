@@ -1,3 +1,4 @@
 - Fixed an issue where clients would crash upon trying to eat any cakes if:
   - A: The Aether mod was also installed.
   - B: Both mods were run on a dedicated server.
+- Updated gradle stuff for my own needs.
