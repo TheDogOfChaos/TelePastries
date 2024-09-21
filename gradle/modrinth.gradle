@@ -8,7 +8,7 @@ if (System.getenv().MODRINTH_KEY) {
         versionType = "release"
         versionName = "${mod_name} ${mc_version}"
         versionNumber = project.version
-        uploadFile = tasks.jar.archiveFile.get().asFile
+        uploadFile = jar
         changelog = fileContents
         gameVersions = ["1.20", "${mc_version}"]
         loaders = ["forge"]
